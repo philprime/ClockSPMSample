@@ -35,6 +35,7 @@
 		D48640CD262D95D600A1ABBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48640D0262D95D600A1ABBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48640D2262D95D600A1ABBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48640DC262D98A000A1ABBA /* ClockPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ClockPackage; path = ../ClockPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		D48640A1262D93C000A1ABBA = {
 			isa = PBXGroup;
 			children = (
+				D48640DC262D98A000A1ABBA /* ClockPackage */,
 				D48640AE262D95B500A1ABBA /* Clock_macOS */,
 				D48640C3262D95D300A1ABBA /* Clock_iOS */,
 				D48640AD262D95B500A1ABBA /* Products */,
