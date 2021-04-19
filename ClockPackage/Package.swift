@@ -8,6 +8,9 @@ let package = Package(
         .library(name: "ClockUI", targets: ["ClockUI"]),
     ],
     targets: [
-        .target(name: "ClockUI")
+        .target(name: "ClockUI", resources: [
+            .process("Resources/ClockViewController_iOS.xib"),
+            .process("Resources/ClockViewController_macOS.xib"),
+        ])
     ]
 )
