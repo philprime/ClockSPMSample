@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D48640B0262D95B500A1ABBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48640AF262D95B500A1ABBA /* AppDelegate.swift */; };
-		D48640B2262D95B500A1ABBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48640B1262D95B500A1ABBA /* ViewController.swift */; };
 		D48640B4262D95B800A1ABBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48640B3262D95B800A1ABBA /* Assets.xcassets */; };
 		D48640B7262D95B800A1ABBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48640B5262D95B800A1ABBA /* Main.storyboard */; };
 		D48640C5262D95D300A1ABBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48640C4262D95D300A1ABBA /* AppDelegate.swift */; };
@@ -17,12 +15,14 @@
 		D48640CC262D95D300A1ABBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48640CA262D95D300A1ABBA /* Main.storyboard */; };
 		D48640CE262D95D600A1ABBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48640CD262D95D600A1ABBA /* Assets.xcassets */; };
 		D48640D1262D95D600A1ABBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48640CF262D95D600A1ABBA /* LaunchScreen.storyboard */; };
+		D48640E3262DA50D00A1ABBA /* ClockUI_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = D48640E2262DA50D00A1ABBA /* ClockUI_iOS */; };
+		D48640E8262DAAFA00A1ABBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48640E6262DAAFA00A1ABBA /* AppDelegate.swift */; };
+		D48640E9262DAAFA00A1ABBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48640E7262DAAFA00A1ABBA /* ViewController.swift */; };
+		D48640ED262DAB3D00A1ABBA /* ClockUI_macOS in Frameworks */ = {isa = PBXBuildFile; productRef = D48640EC262DAB3D00A1ABBA /* ClockUI_macOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D48640AC262D95B500A1ABBA /* Clock_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D48640AF262D95B500A1ABBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D48640B1262D95B500A1ABBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D48640B3262D95B800A1ABBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48640B6262D95B800A1ABBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D48640B8262D95B800A1ABBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		D48640D0262D95D600A1ABBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48640D2262D95D600A1ABBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D48640DC262D98A000A1ABBA /* ClockPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ClockPackage; path = ../ClockPackage; sourceTree = "<group>"; };
+		D48640E6262DAAFA00A1ABBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D48640E7262DAAFA00A1ABBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48640ED262DAB3D00A1ABBA /* ClockUI_macOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48640E3262DA50D00A1ABBA /* ClockUI_iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				D48640AE262D95B500A1ABBA /* Clock_macOS */,
 				D48640C3262D95D300A1ABBA /* Clock_iOS */,
 				D48640AD262D95B500A1ABBA /* Products */,
+				D48640E1262DA50D00A1ABBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +83,8 @@
 		D48640AE262D95B500A1ABBA /* Clock_macOS */ = {
 			isa = PBXGroup;
 			children = (
-				D48640AF262D95B500A1ABBA /* AppDelegate.swift */,
-				D48640B1262D95B500A1ABBA /* ViewController.swift */,
+				D48640E6262DAAFA00A1ABBA /* AppDelegate.swift */,
+				D48640E7262DAAFA00A1ABBA /* ViewController.swift */,
 				D48640B3262D95B800A1ABBA /* Assets.xcassets */,
 				D48640B5262D95B800A1ABBA /* Main.storyboard */,
 				D48640B8262D95B800A1ABBA /* Info.plist */,
@@ -102,6 +107,13 @@
 			path = Clock_iOS;
 			sourceTree = "<group>";
 		};
+		D48640E1262DA50D00A1ABBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +130,9 @@
 			dependencies = (
 			);
 			name = Clock_macOS;
+			packageProductDependencies = (
+				D48640EC262DAB3D00A1ABBA /* ClockUI_macOS */,
+			);
 			productName = Clock_macOS;
 			productReference = D48640AC262D95B500A1ABBA /* Clock_macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +150,9 @@
 			dependencies = (
 			);
 			name = Clock_iOS;
+			packageProductDependencies = (
+				D48640E2262DA50D00A1ABBA /* ClockUI_iOS */,
+			);
 			productName = Clock_iOS;
 			productReference = D48640C2262D95D300A1ABBA /* Clock_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +168,7 @@
 				TargetAttributes = {
 					D48640AB262D95B500A1ABBA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					D48640C1262D95D300A1ABBA = {
 						CreatedOnToolsVersion = 12.4;
@@ -202,8 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48640B2262D95B500A1ABBA /* ViewController.swift in Sources */,
-				D48640B0262D95B500A1ABBA /* AppDelegate.swift in Sources */,
+				D48640E9262DAAFA00A1ABBA /* ViewController.swift in Sources */,
+				D48640E8262DAAFA00A1ABBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +598,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D48640E2262DA50D00A1ABBA /* ClockUI_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClockUI_iOS;
+		};
+		D48640EC262DAB3D00A1ABBA /* ClockUI_macOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClockUI_macOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D48640A2262D93C000A1ABBA /* Project object */;
 }

@@ -6,21 +6,17 @@
 //
 
 import Cocoa
+import ClockUI_macOS
 
 class ViewController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear() {
+        super.viewDidAppear()
 
-        // Do any additional setup after loading the view.
+        let clockVC = ClockViewController.loadFromNib()
+        self.addChild(clockVC)
+        clockVC.view.autoresizingMask = [.width, .height]
+        self.view.addSubview(clockVC.view)
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 

@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import ClockUI_iOS
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let clockVC = ClockViewController.loadFromNib()
+        self.addChild(clockVC)
+        clockVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.view.addSubview(clockVC.view)
     }
-
-
 }
 
