@@ -1,6 +1,13 @@
 import UIKit
+import ClockUI
+import Combine
 
 public class ClockViewController: UIViewController {
+
+    // MARK: - Services
+
+    private let service = ClockService()
+    private var timeCancellable: AnyCancellable!
 
     // MARK: - IB Outlets
 
@@ -9,7 +16,15 @@ public class ClockViewController: UIViewController {
     // MARK: - IB Actions
 
     @IBAction func didTapFetchButtonAction() {
-        print("did tap fetch")
+        service.fetchTime()
+    }
+
+    // MARK: - View Life Cycle
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        timeCancellable = service.currentTime
+            .sink(receiveValue: { self.timeLabel.text = $0 })
     }
 
     // MARK: - Nib Loading
